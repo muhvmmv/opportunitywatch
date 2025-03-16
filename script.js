@@ -1,36 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('header');
-    let lastScrollY = window.scrollY;
+
+    const navToggle = document.createElement('button');
+    navToggle.innerText = 'Menu';
+    navToggle.classList.add('nav-toggle');
+    document.querySelector('header').appendChild(navToggle);
   
-    window.addEventListener('scroll', () => {
-      // Highlight active section in navigation
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('nav ul li a');
+    const navMenu = document.querySelector('nav ul');
   
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
-          current = section.getAttribute('id');
-        }
-      });
-  
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-          link.classList.add('active');
-        }
-      });
-  
-      // Hide/Show header on scroll
-      if (window.scrollY > lastScrollY) {
-        // Scrolling down
-        header.classList.add('hidden');
-      } else {
-        // Scrolling up
-        header.classList.remove('hidden');
-      }
-      lastScrollY = window.scrollY;
+    navToggle.addEventListener('click', function () {
+      navMenu.classList.toggle('active');
     });
+  
+
+    const contactForm = document.getElementById('contact-form');
+  
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+  
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+  
+        alert(`Thank you, ${name}! Your message has been sent.`);
+  
+        // Clear the form
+        contactForm.reset();
+      });
+    }
   });

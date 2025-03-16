@@ -3,106 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpportunityWatch</title>
+  <title>ArewaWatch</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <header>
     <div class="header-content">
-      <h1>OpportunityWatch</h1>
+      <div class="logo-container">
+        <img src="arewasign-removebg-preview.png" alt="ArewaWatch Logo" class="logo">
+        <h1>ArewaWatch</h1>
+      </div>
+      <nav>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="ngos.html">NGOs</a></li>
+        </ul>
+      </nav>
       <div class="search-bar">
-        <input type="text" placeholder="Search...">
-        <button aria-label="Search"><i class="fas fa-search"></i></button>
+        <input type="text" placeholder="Search scholarships, jobs, and more...">
+        <button><i class="fas fa-search"></i></button>
       </div>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
-        <li><a href="#scholarships"><i class="fas fa-graduation-cap"></i> Scholarships</a></li>
-        <li><a href="#jobs"><i class="fas fa-briefcase"></i> Jobs</a></li>
-        <li><a href="#ngos"><i class="fas fa-hand-holding-heart"></i> NGOs</a></li>
-      </ul>
-    </nav>
   </header>
 
+  <!-- Hero Section -->
   <section id="home" class="hero">
-    <div class="hero-box">
-      <h2>Navigate Success Paths</h2>
-      <p>Your journey to career success starts here. Explore opportunities, scholarships, and job listings tailored for you, just follow mamman and you will be good</p>
-      <a href="#blog" class="cta-button">Get Started</a>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Find <span class="highlight">Scholarships</span></h1>
+        <h2>Job postings and more</h2>
+        <ul class="features">
+          <li><i class="fas fa-check-circle"></i> Vetted scholarships</li>
+          <li><i class="fas fa-briefcase"></i> Amazing jobs</li>
+          <li><i class="fas fa-blog"></i> Keeps up with the current update through our blog</li>
+        </ul>
+        <a href="#scholarships" class="cta-button">View Featured Listings</a>
+      </div>
+      <div class="hero-image">
+        <img src="IMG_2484.PNG" alt="Hero Image">
+      </div>
     </div>
   </section>
 
-  <section id="blog">
-    <h2>Blog</h2>
-    <article>
-      <a href="#">
-        <h3>Navigating the Job Market: Tips for Job Seekers</h3>
-        <p>In today’s competitive job market, it’s more critical than ever for job seekers to stand out. If you are not like mamman you might be jobless forever...</p>
-      </a>
-    </article>
-    <article>
-      <a href="#">
-        <h3>Scholarship Guide: Funding Your Future Success</h3>
-        <p>Learn how to find and apply for scholarships to fund your education...</p>
-      </a>
-    </article>
+  <!-- Latest Updates Section -->
+  <section id="latest-updates" class="card-section">
+    <h2>Latest Updates</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>New Scholarship Opportunities</h3>
+        <p>Discover the latest scholarships for 2023. Apply now and secure your future!</p>
+        <a href="blog-post-1.html" class="card-button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Top Job Openings This Week</h3>
+        <p>Explore amazing job opportunities in various fields. Don't miss out!</p>
+        <a href="blog-post-2.html" class="card-button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>NGOs Making a Difference</h3>
+        <p>Learn about NGOs creating impact in your community and how you can get involved.</p>
+        <a href="blog-post-3.html" class="card-button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Career Tips for Graduates</h3>
+        <p>Get expert advice on how to kickstart your career after graduation.</p>
+        <a href="blog-post-4.html" class="card-button">Learn More</a>
+      </div>
+    </div>
   </section>
 
-  <section id="scholarships">
-    <h2>Scholarships</h2>
-    <article>
-      <a href="#">
-        <h3>Scholarship A</h3>
+  <!-- Featured Scholarships Section -->
+  <section id="featured-scholarships" class="card-section">
+    <h2>Featured Scholarships</h2>
+    <a href="scholarships.html" class="cta-button">View All Scholarships</a>
+    <div class="card-container">
+      <div class="card">
+        <h3>Fully Funded Masters in the USA</h3>
         <p>Deadline: 2023-12-01. Apply now for this amazing opportunity!</p>
-      </a>
-    </article>
-    <article>
-      <a href="#">
-        <h3>Scholarship B</h3>
+        <a href="scholarship-1.html" class="card-button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Undergraduate Scholarships in Canada</h3>
         <p>Deadline: 2023-11-15. Don't miss out on this chance to fund your education!</p>
-      </a>
-    </article>
+        <a href="scholarship-2.html" class="card-button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>STEM Scholarships in Germany</h3>
+        <p>Deadline: 2024-01-10. Open to students pursuing STEM fields.</p>
+        <a href="scholarship-3.html" class="card-button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Women in Tech Scholarships</h3>
+        <p>Deadline: 2023-12-20. Empowering women in technology worldwide.</p>
+        <a href="scholarship-4.html" class="card-button">Learn More</a>
+      </div>
+    </div>
   </section>
 
-  <section id="jobs">
-    <h2>Job Listings</h2>
-    <article>
-      <a href="#">
-        <h3>Job A</h3>
-        <p>mamman's Company - debrecen. Apply now for this exciting opportunity!</p>
-      </a>
-    </article>
-    <article>
-      <a href="#">
-        <h3>Job B</h3>
-        <p>mamman's Company - budapest. Join a dynamic team and grow your career!</p>
-      </a>
-    </article>
-  </section>
-
-  <section id="ngos">
-    <h2>NGOs</h2>
-    <article>
-      <a href="#">
-        <h3>NGO Initiative A</h3>
-        <p>Learn about this NGO's initiatives and how you can get involved.</p>
-      </a>
-    </article>
-    <article>
-      <a href="#">
-        <h3>NGO Initiative B</h3>
-        <p>Discover how this NGO is making a difference and how you can help.</p>
-      </a>
-    </article>
+  <!-- Featured Jobs Section -->
+  <section id="featured-jobs" class="card-section">
+    <h2>Featured Jobs</h2>
+    <a href="jobs.html" class="cta-button">View All Jobs</a>
+    <div class="card-container">
+      <div class="card">
+        <h3>Software Engineer at Google</h3>
+        <p>Location: Remote. Apply now to join one of the world's leading tech companies.</p>
+        <a href="job-1.html" class="card-button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Marketing Manager at Amazon</h3>
+        <p>Location: Lagos, Nigeria. Lead marketing campaigns for a global brand.</p>
+        <a href="job-2.html" class="card-button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Data Analyst at Microsoft</h3>
+        <p>Location: Nairobi, Kenya. Work with cutting-edge data technologies.</p>
+        <a href="job-3.html" class="card-button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Product Designer at Apple</h3>
+        <p>Location: Cupertino, USA. Design the future of technology.</p>
+        <a href="job-4.html" class="card-button">Learn More</a>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 by Muhammad Nasirdeen for OpportunityWatch</p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>ArewaWatch is your gateway to scholarships, jobs, and NGO opportunities.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="ngo.html">NGOs</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 ArewaWatch. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Hamburger Menu Toggle
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
