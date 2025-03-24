@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - ArewaWatch</title>
+  <title>Scholarships - ArewaWatch</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -11,61 +11,40 @@
   <header>
     <div class="header-content">
       <div class="logo-container">
-        <img src="arewasign-removebg-preview.png" alt="ArewaWatch Logo" class="logo">
+        <img src="logo.png" alt="ArewaWatch Logo" class="logo">
         <h1>ArewaWatch</h1>
       </div>
       <nav>
-        <div class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
-        </div>
-        <ul class="nav-links" id="nav-links">
+        <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="scholarships.html">Scholarships</a></li>
           <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="ngos.html">NGOs</a></li>
         </ul>
       </nav>
       <div class="search-bar">
-        <input type="text" placeholder="Search scholarships, jobs, and more...">
+        <input type="text" placeholder="Search...">
         <button><i class="fas fa-search"></i></button>
       </div>
     </div>
   </header>
 
-  <section id="blog" class="card-section">
-    <h2>Latest Blog Posts</h2>
+  <section class="card-section">
+    <h2>Featured Scholarships</h2>
     <div class="card-container">
       <div class="card">
-        <h3>Navigating the Job Market</h3>
-        <p>Tips for job seekers to stand out in today’s competitive market.</p>
-        <a href="blog-post-1.html" class="card-button">Read More</a>
+        <h3>Scholarship A</h3>
+        <p>Deadline: 2023-12-01. Apply now for this amazing opportunity!</p>
+        <a href="scholarship-1.html" class="card-button">Learn More</a>
       </div>
       <div class="card">
-        <h3>Scholarship Guide</h3>
-        <p>Learn how to find and apply for scholarships to fund your education.</p>
-        <a href="blog-post-2.html" class="card-button">Read More</a>
-      </div>
-      <div class="card">
-        <h3>NGOs Making a Difference</h3>
-        <p>Discover how NGOs are creating impact in your community.</p>
-        <a href="blog-post-3.html" class="card-button">Read More</a>
-      </div>
-      <div class="card">
-        <h3>Career Tips for Graduates</h3>
-        <p>Get expert advice on how to kickstart your career after graduation.</p>
-        <a href="blog-post-4.html" class="card-button">Read More</a>
+        <h3>Scholarship B</h3>
+        <p>Deadline: 2023-11-15. Don't miss out on this chance to fund your education!</p>
+        <a href="scholarship-2.html" class="card-button">Learn More</a>
       </div>
     </div>
   </section>
-  <!-- Modal -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2 class="modal-title"></h2>
-    <p class="modal-description"></p>
-    <div class="modal-details"></div>
-  </div>
-</div>
 
   <footer>
     <div class="footer-content">
@@ -80,6 +59,7 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="scholarships.html">Scholarships</a></li>
           <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="ngo.html">NGOs</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -93,15 +73,5 @@
     </div>
     <p class="footer-bottom">&copy; 2025 ArewaWatch. All rights reserved.</p>
   </footer>
-
-  <script>
-    // Hamburger Menu Toggle
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
-
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
 </body>
 </html>
